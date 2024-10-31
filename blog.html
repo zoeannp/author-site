@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
+    <title>Zoe Proudfoot Author</title>
+</head>
+<body>
+    <script src="script.js"></script>
+<!-- Header Section -->
+<header>
+    <div class="logo-container">
+        <a href="index.html"><img src="images/logo-header.png" alt="Zoe Proudfoot Logo" class="logo"></a>
+    </div>
+    <!-- The Hamburger Menu Button -->
+    <span id="hamburger" onclick="openNav()">&#9776;</span>
+    
+    <!-- nav for larger screens -->
+     <div class="nav-computer-scr">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog/News</a></li>
+        </ul>
+     </div>
+</header>
+
+
+<!-- The Overlay -->
+<div id="myNav" class="overlay">
+    <!-- Button to close the overlay nav -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <!-- Overlay content -->
+    <nav class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="blog.html">Blog/News</a>
+    </nav>
+</div>
+<main>
+        <h1>Blog/News</h1>
+        <p>
+            <strong>Stay updated on all things Zoe Proudfoot</strong><br>
+            Here, you'll find the latest updates on my upcoming projects, book releases, and any 
+            special events. Whether it's cover reveals, new book announcements, or exclusive 
+            behind-the-scenes content, this is the place to be for all the latest news.
+        </p>
+        <h2>Upcoming Projects</h2>
+        <div class="news">
+            <div class="news-grid">
+                <h4>Rossi Brothers Book 3</h4>
+                <p><em>Final Book in the Rossi Brothers series</em></p>
+                <p><em><strong>Plot Status: </strong>Coming Soon</em></p>
+                <p>The final installment in the Rossi Brothers saga. 
+                    Plot details are still in development, 
+                    but this book will bring the epic series to a thrilling conclusion. 
+                    Stay tuned for more updates as the story unfolds!</p>
+            </div>
+            <div class="news-grid">
+                <h4>Wild Hearts</h4>
+                <p><em>Cowboy Reverse Harem - Second Draft</em></p>
+                <a href="https://amzn.asia/d/3sDW6Xl">Pre-Order Ready</a>
+                <p>
+                    A reverse harem set against the backdrop 
+                    of the rugged Canadian Rockies. 
+                    Avery McKenna's connection with three irresistable cowboys - 
+                    Colt, Mason, and Walker - brings love, 
+                    tension and spice to life on her family's ranch. 
+                    With its feiry romance and adventure, 
+                    this is one ride you won't want to miss!
+                </p>
+            </div>
+            <div class="news-grid">
+                <h4>Beneath Their Control</h4>
+                <p><em>FFM Romance - Plot Outline Ready</em></p>
+                <p>
+                    Daisy Monroe explores the depth of her desires in a 
+                    relationship with Lucas and Sophia. 
+                    But their intense dynamic is threatened by dark secrets from 
+                    Lucas's past. Will Daisy's submissive 
+                    journey bring her closer to herself - or will it push her to the edge?
+                </p>
+            </div>
+            <div class="news-grid">
+                <h4>Kiss and Tell</h4>
+                <p><em>Contemporary Sapphic Romance - First Draft</em></p>
+                <p><em><strong>Plot Status: </strong>In Development</em></p>
+                <p>
+                    Best friends, unspoken desires, and a connection that can no 
+                    longer be ignored—Kiss and Tell explores the complex journey of 
+                    Lily and Elara as they navigate the tension between friendship and 
+                    something more. From stolen glances at parties to intimate late-night 
+                    conversations, their feelings grow in unexpected ways. 
+                    With a story full of emotional highs, flirty tension, 
+                    and the push-pull of new love, this first draft is 
+                    just beginning to reveal the magic and intensity of their bond. 
+                    Watch as these two women discover whether they can turn friendship into something much deeper.
+                </p>
+            </div>
+        </div>
+        <div class="events">
+            <h2>Upcoming Events</h2>
+            <div class="events-grid">
+                <h4>A Romantic Adventure NZ - Book Signing Event</h4>
+                <p><em>13th March 2026</em></p>
+                <p><em><strong>Christchurch, New Zealand</strong></em></p>
+                <p>
+                    Join me for an exciting book signing event in Christchurch! 
+                    Meet me, get your books signed, 
+                    and hear all about my upcoming projects. More details coming soon!
+                </p>
+            </div>
+        </div>
+        <div class="newsletter-signup">
+            <h2>Newsletter Sign-Up</h2>
+            <p>Want to keep up to date with all the latest? Sign-Up for my Newsletter here</p>
+            <form action="https://formspree.io/f/xrbgpeqv" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Sign-Up</button>
+        </div>
+        <div class="book-of-the-month">
+            <h2>Book Of the Month</h2>
+            <h3>October 2024</h3>
+            <h4>A Game of Romance and Ruin - Ruby Roe</h4>
+            <iframe type="text/html" sandbox="allow-scripts allow-same-origin allow-popups" width="212" height="362" frameborder="0" allowfullscreen style="max-width:100%" src="https://read.amazon.com.au/kp/card?asin=B0BTMY7MNP&preview=inline&linkCode=kpe&ref_=kip_embed_taf_preview_QD47587KGX66A252VNTN" ></iframe>
+        </div>        
+        </main>
+    <footer>
+        <p>&copy; 2020 Zoe Proudfoot</p>
+    </footer>
+</body>
+</html>
