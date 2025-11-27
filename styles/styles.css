@@ -1,0 +1,543 @@
+/* Zoe Proudfoot - Sapphic Author Website Styles */
+
+/* Lesbian Flag Color Palette */
+:root {
+    --sunset-orange: #D62900;
+    --bright-orange: #FF9B55;
+    --white: #FFFFFF;
+    --dusty-pink: #D461A6;
+    --deep-rose: #A50062;
+    --dark-bg: #1a1a1a;
+    --light-gray: #f5f5f5;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+.navbar {
+    background: linear-gradient(135deg, var(--deep-rose) 0%, var(--sunset-orange) 100%);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.nav-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Euphoria Script', cursive;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--deep-rose) 0%, var(--sunset-orange) 50%, var(--bright-orange) 100%);
+    display: flex;
+    align-items: center;
+    padding: 6rem 2rem 2rem;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--white);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-text .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+    font-style: italic;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: var(--white);
+    line-height: 1.8;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--white);
+    color: var(--deep-rose);
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.hero-book-cover {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.hero-book-cover:hover {
+    transform: scale(1.05);
+}
+
+/* Section Styling */
+section {
+    padding: 5rem 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--bright-orange), var(--dusty-pink), var(--deep-rose));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Published Books Section */
+.published-books {
+    background-color: #2a2a2a;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.book-card {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.book-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--dusty-pink);
+    box-shadow: 0 10px 30px rgba(212, 97, 166, 0.3);
+}
+
+.book-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.book-card-body {
+    padding: 2rem;
+}
+
+.book-card h3 {
+    color: var(--bright-orange);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.book-card h4 {
+    color: var(--dusty-pink);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.book-card p {
+    color: var(--light-gray);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.book-tropes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.trope-tag {
+    background: linear-gradient(135deg, var(--dusty-pink), var(--deep-rose));
+    color: var(--white);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.buy-button {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--bright-orange), var(--sunset-orange));
+    color: var(--white);
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.buy-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 155, 85, 0.4);
+}
+
+/* WIP Section */
+.wip-section {
+    background: linear-gradient(180deg, #1a1a1a 0%, #2a2a2a 100%);
+}
+
+.wip-showcase {
+    display: grid;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.wip-card {
+    background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+    border-radius: 15px;
+    padding: 3rem;
+    border-left: 5px solid var(--dusty-pink);
+    transition: all 0.3s ease;
+}
+
+.wip-card:hover {
+    border-left-color: var(--bright-orange);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.wip-card h3 {
+    font-size: 2.2rem;
+    color: var(--bright-orange);
+    margin-bottom: 0.5rem;
+}
+
+.wip-card .subtitle {
+    color: var(--dusty-pink);
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.wip-card p {
+    color: var(--light-gray);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.wip-status {
+    display: inline-block;
+    background-color: var(--deep-rose);
+    color: var(--white);
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+/* Sappho's Universe Special Styling */
+.sapphos-universe {
+    background: linear-gradient(135deg, var(--deep-rose) 0%, #1a1a1a 100%);
+    border: 2px solid var(--bright-orange);
+}
+
+.sapphos-books {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.sapphos-book {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid var(--dusty-pink);
+    transition: all 0.3s ease;
+}
+
+.sapphos-book:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.sapphos-book h4 {
+    color: var(--bright-orange);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.sapphos-book .pairing {
+    color: var(--dusty-pink);
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* About Section */
+.about-section {
+    background-color: #2a2a2a;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.author-photo {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(212, 97, 166, 0.3);
+    border: 3px solid var(--dusty-pink);
+}
+
+.about-text h3 {
+    color: var(--bright-orange);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    color: var(--light-gray);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.fun-facts {
+    background: linear-gradient(135deg, rgba(212, 97, 166, 0.1), rgba(165, 0, 98, 0.1));
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--dusty-pink);
+    margin-top: 2rem;
+}
+
+.fun-facts h4 {
+    color: var(--bright-orange);
+    margin-bottom: 1rem;
+}
+
+.fun-facts ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.fun-facts li {
+    color: var(--light-gray);
+    padding: 0.5rem 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+.fun-facts li:before {
+    content: "🏳️‍🌈";
+    position: absolute;
+    left: 0;
+}
+
+/* Contact Section */
+.contact-section {
+    background: linear-gradient(135deg, var(--deep-rose) 0%, var(--sunset-orange) 100%);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.contact-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.contact-card:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: var(--white);
+    transform: translateY(-5px);
+}
+
+.contact-card i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.contact-card a:hover {
+    opacity: 0.8;
+}
+
+.social-button {
+    display: inline-block;
+    background-color: var(--white);
+    color: var(--deep-rose);
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.social-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+.footer {
+    background-color: #0a0a0a;
+    padding: 2rem;
+    text-align: center;
+    color: var(--light-gray);
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+.footer-tagline {
+    color: var(--dusty-pink);
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-book-cover {
+        margin: 0 auto;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .sapphos-books {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text .subtitle {
+        font-size: 1.2rem;
+    }
+
+    section {
+        padding: 3rem 1rem;
+    }
+
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+}
